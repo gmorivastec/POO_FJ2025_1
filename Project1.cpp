@@ -53,4 +53,81 @@ int main()
     Animal animal1;
     Animal animal2(5, 10);
     std::cout << animal1.add(2, 3) << std::endl;
+    std::cout << animal1.getAge() << std::endl;
+    
+    // CANNOT DO THIS
+    // std::cout << animal1.age << std::endl;
+    //animal1.age = 4;
+
+    // flow control structures review
+    // estructuras de control de flujo
+
+    // conditions
+    
+    if (animal1.getAge() < 2) {
+        std::cout << "BABY ANIMAL" << std::endl;
+    }
+    else if (animal1.getAge() < 5) {
+        std::cout << "YOUNG ANIMAL" << std::endl;
+    }
+    else {
+        std::cout << "ADULT ANIMAL" << std::endl;
+    }
+
+    switch (animal1.getAge()) {
+        case 1:
+            std::cout << "ONE YEAR OLD!" << std::endl;
+            break;
+        case 2:
+            std::cout << "TWO YEAR OLD!" << std::endl;
+            break;
+        default:
+            std::cout << "SOME OTHER AGE" << std::endl;
+            break;
+    }
+
+
+    // loops
+
+    // for
+    // for (initial value; condition; change) {}
+    // i++ - increments by 1 
+    // ++i
+    // i = i + 1
+    // i += 1
+
+
+    for (int i = 0; i < 10; i++) {
+        std::cout << i << std::endl;
+    }
+
+    for (int i = 0; i < 10; i+= 2) {
+        std::cout << i << std::endl;
+    }
+
+    for (int i = 10; i > 0; i--) {
+        std::cout << i << std::endl;
+    }
+
+    // while
+
+    int i = 0;
+    while (i < 10) {
+        // SUPER IMPORTANT
+        // if you are using a number for the condition in a while
+        // ensure you are doing a change
+        std::cout << i << std::endl;
+        i++;
+
+        // we normally don't use while with a numeric condition
+    }
+
+    // do - while
+    i = 0;
+    do {
+        std::cout << i << std::endl;
+        i++;
+    } while (i < 10);
+
+
 }

@@ -28,3 +28,11 @@ void Animal::eat() {
 int Animal::add(int firstValue, int secondValue) {
 	return firstValue + secondValue;
 }
+
+int Animal::getAge() {
+	return age;
+}
+
+void Animal::setAge(int newAge) {
+	age = newAge;
+}

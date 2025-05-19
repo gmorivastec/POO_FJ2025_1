@@ -63,5 +63,13 @@ class Animal
 		Animal(int age, int weight);
 		void eat();
 		int add(int firstValue, int secondValue);
+
+		// accessor methods 
+		// methods that are used to define who can read AND/OR write
+		// an attribute
+		int getAge();
+	
+	protected:
+		void setAge(int newAge);
 };
 
