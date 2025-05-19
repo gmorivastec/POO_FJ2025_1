@@ -47,7 +47,7 @@ int main()
 
     // :: - scope resolution operator
     // \n - line break
-    std::cout << "Hello World!" << std::endl; // a sample comment 
+    std::cout << "Hello World 2!" << std::endl; // a sample comment 
 
     // creating an object
     Animal animal1;
