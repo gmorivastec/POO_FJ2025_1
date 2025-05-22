@@ -34,13 +34,16 @@ COMMENTS!
 // < > used for standard library headers or libraries installed in your OS path
 // " " for your own headers and files in your source tree
 #include <iostream>
+#include <string>
 #include "Animal.h"
+#include "Mammal.h"
+#include "Viviparous.h"
 
 // main function - 
 // in c++ we have a main entry point that will run when we "press play"
 // that is the main method
 // io - input / output
-int main()
+int previousMain()
 {
     // when we show something 
     // we call it "print"
@@ -129,5 +132,43 @@ int main()
         i++;
     } while (i < 10);
 
+    return -1;
+}
 
+int main() {
+    
+    Animal animal1;
+    Mammal mammal1(5, 20, "Fifi"); 
+    Viviparous viviparous1;
+
+    animal1.eat();
+    mammal1.eat();
+    //viviparous1.eat();
+
+    viviparous1.bornAlive();
+    mammal1.bornAlive();
+
+    viviparous1.sayHello();
+    mammal1.sayHello();
+
+    std::cout << mammal1.getAge() << std::endl;
+
+    std::string value2;
+    std::string value3;
+
+    /*
+    // how to capture input from user
+    int userInput = 0;
+    do {
+        std::cout << "give me a number!" << std::endl;
+        std::cin >> userInput;
+
+        std::cout << "give me a string!" << std::endl;
+        std::cin >> value2;
+
+        //std::cout << "give me another string!" << std::endl;
+        //std::getline(std::cin, value3);
+
+    } while (userInput != 9);
+    */
 }
